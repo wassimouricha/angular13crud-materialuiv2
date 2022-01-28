@@ -1,6 +1,50 @@
 {
   "ProductList": [
-   
+    {
+      "productName": "pomme",
+      "category": "Fruits",
+      "freshness": "Neuf",
+      "price": 5,
+      "comment": "bonne pomme",
+      "date": "2022-01-11T23:00:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "mangue",
+      "category": "Fruits",
+      "freshness": "Neuf",
+      "price": 9,
+      "comment": "bon prix",
+      "date": "2022-01-24T23:00:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "pomme",
+      "category": "Fruits",
+      "freshness": "Neuf",
+      "price": 8,
+      "comment": "bonne pomme",
+      "date": "2022-01-11T23:00:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "pomme",
+      "category": "Fruits",
+      "freshness": "Neuf",
+      "price": 7,
+      "comment": "bonne pomme",
+      "date": "2022-01-11T23:00:00.000Z",
+      "id": 4
+    },
+    {
+      "productName": "poire",
+      "category": "Fruits",
+      "freshness": "Neuf",
+      "price": 8,
+      "comment": "bonne pomme",
+      "date": "2022-01-11T23:00:00.000Z",
+      "id": 5
+    }
   ],
   "comments": [
     {
