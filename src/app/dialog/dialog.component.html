@@ -1,0 +1,46 @@
+<h1 mat-dialog-title>Formulaire d'ajout de produit </h1>
+<div mat-dialog-content>
+    <form [formGroup]="productForm">
+      <mat-form-field appearance="outline">
+        <mat-label>Nom du produit</mat-label>
+        <input matInput formControlName="productName" placeholder="Tapez le nom du produit">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+
+        <mat-label> Catégorie du produit</mat-label>
+       <mat-select  formControlName="category" placeholder="Catégorie">
+           <mat-option value="Fruits">Fruits</mat-option>
+           <mat-option value="Légumes">Légumes</mat-option>
+           <mat-option value="Informatique">Informatique</mat-option>
+       </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Choisissez une date</mat-label>
+        <input matInput formControlName="date" [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <label for=""><h1>Qualité du produit</h1></label>
+      <mat-radio-group  formControlName="freshness" class="example-radio-group">
+          <mat-radio-button class="example-radio-button" *ngFor="let fresh of freshnessList" [value]="fresh" >
+            {{fresh}}
+          </mat-radio-button>
+      </mat-radio-group>
+      <mat-form-field appearance="outline">
+        <mat-label>Prix</mat-label>
+        <input formControlName="price" matInput type="number" placeholder="">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Commentaire</mat-label>
+       <textarea formControlName="comment" matInput></textarea>
+      </mat-form-field>
+    </form>
+</div>
+<div>
+<div mat-dialog-actions [align]="'end'">
+<button mat-raised-button color="warn" mat-dialog-close>Fermer</button>
+<button style="margin-left:  8px;" mat-raised-button color="primary" (click)="addProduct()" >Sauvegarder</button>
+</div>
