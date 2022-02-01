@@ -9,3 +9,4 @@ Run   `json-server --watch db.json ` to see the json server and navigate to it a
 
 
 
+don't forget to install node with `npm install`
